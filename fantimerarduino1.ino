@@ -22,6 +22,7 @@ bool timerPaused = false;
 unsigned long previousMillis = 0;
 const long interval = 1000;
 const int motorPin = 13;
+bool showOmarCredits = false;
 
 void resetTimer();
 void startTimer();
@@ -29,7 +30,6 @@ void pauseTimer();
 void add10Seconds();
 void enterTime(char key);
 void displayTimerValue();
-void backspace();
 void runMotor(int duration);
 
 void setup() {
@@ -46,6 +46,7 @@ void loop() {
     else if (key == 'B') pauseTimer();
     else if (key == 'C') resetTimer();
     else if (key == 'D') add10Seconds();
+    else if (key == '#') showOmarCredits = true;
     else if (key >= '0' && key <= '9') enterTime(key);
   }
 
@@ -67,6 +68,17 @@ void loop() {
       lcd.clear();
       lcd.print("Enter Time: ");
     }
+  }
+
+  if (showOmarCredits) {
+    lcd.clear();
+    lcd.print("Was made by");
+    lcd.setCursor(0, 1);
+    lcd.print("Omar Abdelrahman");
+    delay(3000);
+    lcd.clear();
+    lcd.print("Enter Time: ");
+    showOmarCredits = false;
   }
 }
 
