@@ -31,7 +31,8 @@ The circuit design of the FanTimer is shown below:
 ## Tinkercad Project
 The following image shows the Tinkercad representation of the project:
 
-![Tinkercad Project](FanTimerArduino.png) <!-- Replace with your image link -->
+![image](https://github.com/user-attachments/assets/1c2e1ca6-91b5-4c42-985e-fa33a89b0000)
+
 
 ## Code
 The Arduino code responsible for controlling the FanTimer can be found in the file **`FanTimerArduino1.ino`**. This code handles user input from a keypad, manages timer functionality, and controls the fan operation.
