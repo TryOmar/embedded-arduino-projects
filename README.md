@@ -1,61 +1,54 @@
-# FanTimer Arduino Project
+# FanTimer Arduino Project Versions
 
-## Overview
-The FanTimer is an Arduino-based project that allows you to control a fan with a customizable timer. Perfect for home automation, ventilation control, and various timing-based applications.
+This repository contains two versions of the FanTimer Arduino project:
 
-## Features
-- Digital timer control through a 4x4 keypad
-- LCD display for timer status and feedback
-- Pause/Resume functionality
-- Quick time adjustment options
-- Automatic fan control
+## Version Comparison
 
-## Usage Manual
+| Feature | V1 (Basic) | V2 (Enhanced) |
+|---------|------------|---------------|
+| Timer Control | ✅ | ✅ |
+| LCD Display | ✅ | ✅ |
+| Keypad Interface | ✅ | ✅ |
+| Direct Motor Control | ✅ | ❌ |
+| H-Bridge Motor Control | ❌ | ✅ |
+| Motor Direction Control | ❌ | ✅ |
+| Motor Speed Control | ❌ | ✅ |
 
-### Keypad Controls
-| Key | Function | Description |
-|-----|----------|-------------|
-| 0-9 | Enter Time | Input numbers to set the timer duration in seconds |
-| A | Start Timer | Begin the countdown with the set duration |
-| B | Pause/Resume | Toggle between pausing and resuming the timer |
-| C | Reset | Clear the current time and reset the timer |
-| D | Quick Add | Add 10 seconds to the current time |
-| # | Show Credits | Display creator information |
+## Version Details
 
-### Basic Operation
-1. **Setting the Time**: 
-   - Use the numeric keys (0-9) to enter your desired duration in seconds
-   - The time will be displayed on the LCD screen
+### [V1 - Basic Version](./v1/)
+- Basic fan control using direct Arduino pin
+- Simple ON/OFF motor functionality
+- Perfect for basic timing applications
+- [View V1 Documentation](./v1/README.md)
 
-2. **Timer Controls**:
-   - Press 'A' to start the countdown
-   - Press 'B' to pause/resume the timer
-   - Press 'C' to reset everything
-   - Press 'D' to quickly add 10 seconds
-   - Press '#' to view creator credits
+### [V2 - Enhanced Version](./v2/)
+- Added H-Bridge motor driver (L298N)
+- Improved motor control capabilities
+- Variable speed control
+- Bidirectional motor operation
+- [View V2 Documentation](./v2/README.md)
 
-3. **Fan Operation**:
-   - The fan will automatically start when the timer reaches zero
-   - The fan will run for 5 seconds and then stop
-   - The system will return to the time entry mode
+## Project Structure
+```
+FanTimerArduino/
+├── README.md
+├── v1/
+│   ├── README.md
+│   ├── FanTimerArduino1.ino
+│   ├── FanTimerArdunio.md
+│   └── images/
+└── v2/
+    ├── README.md
+    ├── FanTimerArduino2.ino
+    ├── FanTimerArdunio.md
+    └── images/
+```
 
-## Components Required
-- Arduino Uno R3
-- MCP23008-based LCD 16x2 (I2C)
-- 4x4 Keypad
-- DC Motor (Fan)
-- Connecting wires
-
-## Installation
-1. Connect the components according to the circuit diagram
-2. Upload the Arduino code to your board
-3. Power up the system
-4. Start using the timer!
-
-## Resources
-- 📽️ [Watch Demo Video](https://youtu.be/WxNZjEOgeos)
-- 📁 [Project Files (Google Drive)](https://drive.google.com/drive/folders/1t7pokOaPTi40edPa0rQoVFkKiX6PXEVr?usp=sharing)
-- 📚 [Full Documentation](./FanTimerArdunio.md)
+## Getting Started
+Choose the version that best suits your needs:
+- Use V1 for simple timer-based fan control
+- Use V2 for advanced motor control features
 
 ## Creator
 **Omar Abdelrahman Abbas**  
