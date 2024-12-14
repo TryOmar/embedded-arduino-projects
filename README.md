@@ -1,64 +1,65 @@
-# FanTimer
+# FanTimer Arduino Project
 
-## Description
-The **FanTimer** is an Arduino-based project designed to control a fan based on a user-defined timer. This project is particularly useful for situations where scheduled airflow is needed, such as in greenhouses, workshops, or home automation systems.
+## Overview
+The FanTimer is an Arduino-based project that allows you to control a fan with a customizable timer. Perfect for home automation, ventilation control, and various timing-based applications.
 
-## Ideas and Benefits
-The **FanTimer** offers several practical applications:
+## Features
+- Digital timer control through a 4x4 keypad
+- LCD display for timer status and feedback
+- Pause/Resume functionality
+- Quick time adjustment options
+- Automatic fan control
 
-- **Home Automation**: Enables users to schedule fan operation, improving comfort without manual intervention.
-- **Greenhouses**: Automates cooling for plants during hot periods, ensuring optimal growth conditions.
-- **Workshops**: Maintains air circulation when working with materials that require ventilation, reducing fumes and enhancing comfort.
+## Usage Manual
 
-## Use Cases
-- **Home Automation**: Cool the room before you arrive.
-- **Temperature Regulation**: Schedule the fan to run during peak heat hours, providing a cooler environment without air conditioning.
-- **Odor Control**: Automatically activate the fan after cooking or other odor-producing activities to maintain a fresh indoor atmosphere.
-- **Cooking**: Ventilate the kitchen after cooking.
-- **Pet Comfort**: Keep pets cool during hot days.
-- **Grow Room**: Maintain optimal conditions for plants.
-- **Allergy Management**: Circulate air to reduce allergens.
-- **Dehumidification**: Reduce humidity in damp areas.
-- **Event Preparation**: Cool the space before guests arrive.
-- **Study Environment**: Create a comfortable study area.
+### Keypad Controls
+| Key | Function | Description |
+|-----|----------|-------------|
+| 0-9 | Enter Time | Input numbers to set the timer duration in seconds |
+| A | Start Timer | Begin the countdown with the set duration |
+| B | Pause/Resume | Toggle between pausing and resuming the timer |
+| C | Reset | Clear the current time and reset the timer |
+| D | Quick Add | Add 10 seconds to the current time |
+| # | Show Credits | Display creator information |
 
-## Circuit Design
-The circuit design of the FanTimer is shown below:
+### Basic Operation
+1. **Setting the Time**: 
+   - Use the numeric keys (0-9) to enter your desired duration in seconds
+   - The time will be displayed on the LCD screen
 
-![image](https://github.com/user-attachments/assets/e7dfdd6d-fa30-4715-9db2-9caa3c013001)
+2. **Timer Controls**:
+   - Press 'A' to start the countdown
+   - Press 'B' to pause/resume the timer
+   - Press 'C' to reset everything
+   - Press 'D' to quickly add 10 seconds
+   - Press '#' to view creator credits
 
+3. **Fan Operation**:
+   - The fan will automatically start when the timer reaches zero
+   - The fan will run for 5 seconds and then stop
+   - The system will return to the time entry mode
 
-## Tinkercad Project
-The following image shows the Tinkercad representation of the project:
+## Components Required
+- Arduino Uno R3
+- MCP23008-based LCD 16x2 (I2C)
+- 4x4 Keypad
+- DC Motor (Fan)
+- Connecting wires
 
-![image](https://github.com/user-attachments/assets/1c2e1ca6-91b5-4c42-985e-fa33a89b0000)
+## Installation
+1. Connect the components according to the circuit diagram
+2. Upload the Arduino code to your board
+3. Power up the system
+4. Start using the timer!
 
+## Resources
+- 📽️ [Watch Demo Video](https://youtu.be/WxNZjEOgeos)
+- 📁 [Project Files (Google Drive)](https://drive.google.com/drive/folders/1t7pokOaPTi40edPa0rQoVFkKiX6PXEVr?usp=sharing)
+- 📚 [Full Documentation](./FanTimerArdunio.md)
 
-## Code
-The Arduino code responsible for controlling the FanTimer can be found in the file **`FanTimerArduino1.ino`**. This code handles user input from a keypad, manages timer functionality, and controls the fan operation.
+## Creator
+**Omar Abdelrahman Abbas**  
+Created: 12/10/2024
 
-## Components
-The project consists of the following components:
-- **Arduino Uno R3**: The main microcontroller board.
-- **MCP23008-based, 32 (0x20) LCD 16 x 2 (I2C)**: For displaying timer values and status messages.
-- **Keypad 4x4**: To input time and control the timer.
-- **DC Motor**: Acts as the fan.
-
-### Components List
-| Component   | Quantity | Description                                   |
-|-------------|----------|-----------------------------------------------|
-| U1          | 1        | Arduino Uno R3                               |
-| U2          | 1        | MCP23008-based, 32 (0x20) LCD 16 x 2 (I2C) |
-| KEYPAD1     | 1        | Keypad 4x4                                   |
-| M1          | 1        | DC Motor                                     |
-
-## Preview Video
-Watch a preview of the FanTimer in action: 
-
-
-https://github.com/user-attachments/assets/f536ef3b-aed4-4579-8873-657e9ec8d6e6
-
-
-
-## Conclusion
-The FanTimer project is a versatile and practical solution for automating fan operation based on user-defined schedules. Its ease of use and potential applications make it a valuable addition to any automated system.
+## License
+This project is open source and available under the MIT License.
