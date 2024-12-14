@@ -11,14 +11,17 @@ This repository contains two versions of the FanTimer Arduino project:
 | Keypad Interface | ✅ | ✅ |
 | Direct Motor Control | ✅ | ❌ |
 | H-Bridge Motor Control | ❌ | ✅ |
+| Breadboard | ❌ | ✅ |
 
 ## Version Details
 
 ### [V1 - Basic Version](./v1/)
 - Basic fan control using direct Arduino pin
+- Simple direct connections
 
 ### [V2 - Enhanced Version](./v2/)
 - Added H-Bridge motor driver (L298N)
+- Implemented breadboard for better organization
 
 ## Project Structure
 ```
@@ -30,8 +33,8 @@ FanTimerArduino/
 
 ## Getting Started
 Choose the version that best suits your needs:
-- Use V1 for simple timer-based fan control.
-- Use V2 for more advanced fan control with H-Bridge motor driver.
+- Use V1 for simple timer-based fan control with direct connections
+- Use V2 for organized breadboard layout with H-Bridge motor control
 
 ## Creator
 **Omar Abdelrahman Abbas**  
