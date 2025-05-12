@@ -19,6 +19,15 @@ A timer-based motor control system that allows precise timing control of motor o
 #### Demo Video
 <!-- Motor Control Timer demo video will be placed here -->
 
+
+https://github.com/user-attachments/assets/b76491ef-2071-493e-850b-0aa1ad663357
+
+https://github.com/user-attachments/assets/832782b9-9fdc-4a7b-ae2a-68c089bfcff4
+
+
+
+
+
 ### [Motor Control Sensor](./motor_control_sensor)
 
 A temperature-activated motor control system that dynamically adjusts motor speed based on environmental temperature readings. This project features:
@@ -34,6 +43,10 @@ A temperature-activated motor control system that dynamically adjusts motor spee
 
 #### Demo Video
 <!-- Motor Control Sensor demo video will be placed here -->
+
+https://github.com/user-attachments/assets/2a200b7f-6b46-4110-a51f-e88b192c6234
+
+
 
 ## Repository Structure
 
