@@ -14,6 +14,8 @@ A timer-based motor control system that allows precise timing control of motor o
 - Multiple operation modes (timing sequences)
 - Circuit design and implementation in multiple versions
 
+**[Tinkercad Simulation Link](https://www.tinkercad.com/things/0b62HdQeuvJ-fantimerarduino/editel?sharecode=PgaGDTmQbONCeW47sdQN1KdSD-fAZ8Uuix6WDo6ymUI)**
+
 ### [Motor Control Sensor](./motor_control_sensor)
 
 A temperature-activated motor control system that dynamically adjusts motor speed based on environmental temperature readings. This project features:
@@ -24,6 +26,16 @@ A temperature-activated motor control system that dynamically adjusts motor spee
 - Status display via 16×2 LCD
 - RGB visual temperature indication
 - Customizable temperature thresholds
+
+**[Tinkercad Simulation Link](https://www.tinkercad.com/things/iVBhH4Ugtej-motor-control-sensor/editel?sharecode=QxMnT5Qqpf0yYdPWEPi-bYSkW_10RLPMeTTnAAkVjkk)**
+
+## Demo Videos
+
+### Motor Control Timer Demo
+<!-- Demo video will be placed here -->
+
+### Motor Control Sensor Demo
+<!-- Demo video will be placed here -->
 
 ## Repository Structure
 
