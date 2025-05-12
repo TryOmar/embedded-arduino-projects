@@ -45,8 +45,7 @@
                 transition: 0.5s;
             }
 
-            .slide .item:nth-child(1),
-            .slide .item:nth-child(2){
+            .slide .item:nth-child(1){
                 top: 0;
                 left: 0;
                 transform: translate(0, 0);
@@ -55,16 +54,24 @@
                 height: 100%;
             }
 
-            /* Fix: Only display first item, hide second item initially */
+            /* Show second slide as preview instead of hiding it */
             .slide .item:nth-child(2){
-                opacity: 0;
-                z-index: -1;
-            }
-
-            .slide .item:nth-child(3){
                 left: 90%;
                 filter: blur(3px);
+                opacity: 1;
+                z-index: 1;
+                top: 50%;
+                transform: translate(0, -50%);
+                width: 200px;
+                height: 300px;
+                border-radius: 20px;
                 transition: filter 0.3s;
+            }
+
+            /* Hide third slide instead of showing it */
+            .slide .item:nth-child(3){
+                opacity: 0;
+                z-index: -1;
             }
             
             /* Hide all slides after the 3rd one */
