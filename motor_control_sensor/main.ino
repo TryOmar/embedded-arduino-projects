@@ -50,8 +50,12 @@ void setup() {
   
   // Initial LCD Setup
   lcd_1.begin(16, 2);
-  lcd_1.print("Motor Control");
-  delay(1000);
+  lcd_1.clear();
+  lcd_1.setCursor(0, 0);
+  lcd_1.print("Motor Control By");
+  lcd_1.setCursor(0, 1);
+  lcd_1.print("Omar Abdelrahman");
+  delay(2000); // Display for 2 seconds
   
   // Initial Mode Setup
   updateModeLEDs();
